@@ -54,16 +54,7 @@ public class MainActivity extends AppCompatActivity {
         camera = Camera.open(2); //open front camera
         startTimer(v);
     }
-
-    /*protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == CAMERA_REQUEST) {
-            if (resultCode == RESULT_OK) {
-                Bitmap photo = (Bitmap) data.getExtras().get("data");
-
-            }
-        }
-    }*/
-
+    
     public void startTimer(View v){
 
         // 5000ms=5s at intervals of 500ms=0.5s so that means it lasts 5 seconds taking 10 images
@@ -102,9 +93,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
-
-
-
 
 }
 
